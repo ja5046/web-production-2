@@ -1,0 +1,21 @@
+
+body{
+   background-color : blue;
+ }
+ p{
+   text-align: center;
+   color:red;
+   font-style:italic;
+   font-family: cursive;
+ }
+.header-image{
+  display: block;
+ }
+ .float{
+   float: right;
+   background-color: orange;
+ }
+ .about-me grid{
+  grid: flex;
+
+ }
