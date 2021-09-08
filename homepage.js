@@ -9,7 +9,7 @@ console.log(x)
 let me = {name: 'Justin', adjectives: ['working out', 'rollerblading', 'playing video games', 'watching movies']}
 
 function describeMe() {
-  document.querySelector("description").innerHTML = me.name + " enjoys " + getRandomItem(me.adjectives)
+  document.querySelector("#description").innerHTML = me.name + " enjoys " + getRandomItem(me.adjectives)
 }
 
 
@@ -31,5 +31,5 @@ function getRandomItem(array) {
   //don't worry about the math here, this just selects a random item from the array
   //but it could be useful if you want to do something similar!
 
-return array[Math.floor(Math.random()array.length)]
+return array[Math.floor(Math.random()*array.length)]
 }
