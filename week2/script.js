@@ -1,0 +1,27 @@
+const myTitle = 'A Beautiful Poem'
+var questions = 6;
+var questionsLeft = ' [' + questions + ' questions left]';
+var nounA = prompt('Please type a noun' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var nounB = prompt('Please type a noun(plural)' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verbA = prompt('Please type a verb that does end in -ing ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verbB = prompt('Please type a verb that does end in -ing ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var adverb = prompt('Please type a adverb ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var nounC = prompt('Please type a type of person(noun)' + questionsLeft);
+alert('All done. Ready for the poem?');
+var sentence = "<h2>I stood upon a high " + nounA;
+sentence += ' and saw, below, many ' + nounB + ' ';
+sentence += verbA + ', '+ verbB;
+sentence += ' and carousing in sin.';
+sentence += ' one looked up, ' + adverb;
+sentence += ' and said ' + '"'+nounC+'!"' + '.</h2>';
+document.write(sentence);
