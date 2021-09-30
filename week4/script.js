@@ -18,7 +18,7 @@ function littlebutton(){
   document.getElementById("text").style.backgroundColor = 'blue';
 }
 function bigbutton() {
-  document.getElementById("text").style.color = 'blue';
+  document.getElementById("text").style.color = 'red';
 }
 
     /* This function reads the value from the valueText element
