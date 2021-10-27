@@ -18,8 +18,13 @@ function getCardData() {
 }
 
 function showCardRandom(){
-  var cardNo = Math.floor(Math.random() * cards.length); // Select a random card number hopefuly
-  showCard(cardNo)
+  var cardNo = Math.floor(Math.random() * cards.length);
+  if(cardNo != undefined){
+    showCard(cardNo)
+  }else {
+    document.write("please hold");
+  }
+
 }
 
 function showCard(cardNo){
@@ -44,13 +49,13 @@ function flattenCards(data){
     return result;
 }
 
-getCardData();
 
 $(document).ready(function() {
   getCardData()
     .done(function(data){
        $("#random").text("Next");
        cards = flattenCards(data);
+       console.log(cards)
        showCardRandom();
     });
   $('#random').click(showCardRandom);
@@ -60,6 +65,7 @@ var totalCount = 6;
 function ChangeIt()
 {
 var num = Math.ceil( Math.random() * totalCount );
-document.background = 'bgimages/'+num+'.jpg';
-document.style.backgroundRepeat = "repeat";// Background repeat
+document.body.style.backgroundImage = 'url(bgimages/'+num+'.jpg)';
+document.body.style.backgroundRepeat = "repeat";// Background repeat
 }
+ChangeIt()

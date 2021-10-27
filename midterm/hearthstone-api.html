@@ -3,19 +3,24 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="hearthstone.css">
+    <link rel="icon" href="bgimages/icon.jpg">
 
 </head>
 <body>
   <main>
-    <section> <h2> Hearthstone Card Randomizer</h2></section>
+    <section> <h2 class="title"> Hearthstone Card Randomizer</h2></section>
     <div class="grid-container">
 <img id="card-image">
-<div id="card-name"></div>
-<div id="card-type"></div>
+<div id="card-name">Card Name:</div>
+<div id="card-type">Card Type:</div>
 <div id="card-faction"></div>
-<div id="card-rarity"></div>
+<div id="card-rarity">Card Rarity</div>
 <div id="player-class"></div>
-<div id="artist-name"></div>
+<div id="artist-name">Artist Name:</div>
+<div id="Music">
+  <audio controls>
+  <source src="bgimages/music.mp3" type="audio">
+</audio></div>
 </div>
 <button id="random">search for random card</button>
     </main>
